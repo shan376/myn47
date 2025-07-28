@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: myn47
-        image: nginx
+        image: nginx:1.21
         ports:
         - containerPort: 80
