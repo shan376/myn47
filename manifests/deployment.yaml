@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myn47-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myn47
+  template:
+    metadata:
+      labels:
+        app: myn47
+    spec:
+      containers:
+      - name: myn47
+        image: nginx
+        ports:
+        - containerPort: 80
